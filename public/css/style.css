@@ -1,0 +1,48 @@
+/*--------------------Configuracoes gerais*/
+body{
+    background-color: #EFF1F4;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    color: #EFF1F4;
+}
+/*--------------------Configuracoes logotipo no menu e menu*/
+.logo-menu{
+    visibility: hidden;
+}
+.menu a{
+    
+}
+
+/*--------------------Configuracoes imagem topo*/
+.banner{
+    height: 500px;
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.8;
+    background: rgb(24, 95, 135);
+}
+
+.blue{
+    background: transparent;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        -webkit-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+}
+
+/*--------------------Configuracoes logotipo e slogan*/
+.logo{
+  margin-top: 8%;
+   
+}
