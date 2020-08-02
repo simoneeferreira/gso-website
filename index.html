@@ -9,49 +9,136 @@
     <meta name="description" content="">
     <meta name="keywords" content="bootstrap, responsive design">
     <!--CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/fontawesome-free-5.13.0-web/css/all.css">
     <link rel="stylesheet" href="public/css/style.css">
     <title>GSO - Home</title>
 </head>
-<body>
-    <!--Imagem do topo-->
-    <div class="container-fluid shadow banner shadow-lg" style="background-image: url(public/img/banner2.jpg); max-height: 500px; background-position: bottom;">
-        <div class="overlay"></div>
-        <!--Navbar-->
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark blue fixed-top shadow border-bottom" id="navbar">
-                <a class="navbar-brand pl-5 justify-content-center logo-menu" href="#"><img src="public/img/seu-logo-aqui.png" width="80" alt="" loading="lazy"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                  <div class="navbar-nav text-uppercase menu">
-                    <a class="nav-item nav-link active" href="#"><i class="fas fa-home fa-sm"></i> Home<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#"><i class="fas fa-users fa-sm"></i> Quem somos</a>
-                    <a class="nav-item nav-link" href="#"><i class="fas fa-coins fa-sm"></i> Operação</a>
-                    <a class="nav-item nav-link " href="#"><i class="fas fa-envelope fa-sm"></i> Contato</a>
-                  </div>
-                </div>
-              </nav>
-        </div>
-        <div class="container-fluid">
-            <div class="row mx-auto text-center ">
-                <div class="col-12 mx-auto logo">
-                    <img class="mx-auto " src="public/img/seu-logo-aqui.png" alt="" style="max-width: 200px;">
-                </div>
-                <div class="col-12 mx-auto pt-5">
-                    <h1 class="h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis velit eget massa accumsan gravida nec dictum nunc. </h1>
-                </div>
-                
-            </div>
-        </div>
+<body> 
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-sm navbar-dark blue fixed-top shadow border-bottom" id="navbar">
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+      <a class="navbar-brand logo-menu" href="#"><img src="public/img/seu-logo-aqui.png" width="80px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav text-uppercase menu">
+        <a class="nav-item nav-link active" href="#"><i class="fas fa-home fa-sm"></i> Home<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#"><i class="fas fa-users fa-sm"></i> Quem somos</a>
+        <a class="nav-item nav-link" href="#"><i class="fas fa-coins fa-sm"></i> Operação</a>
+        <a class="nav-item nav-link " href="#"><i class="fas fa-envelope fa-sm"></i> Contato</a>
+      </div>
     </div>
-    <div class="container-fluid" style="height: 1000px;">
+  </nav>
+  <!--Imagem topo, logo e slogan-->
+  <section id="home">
+    <div class="inner-width">
+      <div class="content">
+        <h1><img src="public/img/seu-logo-aqui.png" class="img-fluid fade-up" alt=""><span style="display: none;">Lorem Ipsum</span></h1>
+        <p class="h1 fade-up">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+        <a href="#" class="btn  btn-primary text-uppercase fade-up mt-2">Saiba mais</a>
+      </div>
+    </div>
 
+  </section>   
+  <!--Cards-->
+  <section class="container-fluid shadow" style="background-color: #d6d6db;padding: 2rem 2rem;">
+    <div class=" row justify-content-center card-group ">
+       <!--Card 1-->
+      <div class="card mb-3 border-right border-dark" style="max-width: 540px;">
+        <div class="row no-gutters mx-auto ">
+          <div class="col-md-4 align-self-center  float-right mx-auto">
+            <i class="far fa-calendar-check card-img fa-5x text-center"></i>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!--Card 2-->
+      <div class="card mb-3 border-right border-dark" style="max-width: 540px;">
+        <div class="row no-gutters mx-auto ">
+          <div class="col-md-4 align-self-center  float-right mx-auto">
+            <i class="fas fa-chart-line card-img fa-5x text-center"></i>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Card 3-->
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters mx-auto ">
+          <div class="col-md-4 align-self-center  float-right mx-auto">
+            <i class="far fa-comments card-img fa-5x text-center"></i>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>  
+  <!--About us-->
+  <section class="container-fluid" style="background-color: #EFF1F4; padding: 6rem 2rem;" >
+    <div class="container">
+    <div class="row justify-content-center">
+      <div  class="col-lg-6 col-sm align-self-center mx-auto">
+        <h4 class=" h1 p-2">Welcome to Company Name</h4>
+        <p class="lead p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra condimentum massa eget mattis. Maecenas aliquet tempor leo, et laoreet diam. Praesent quis consectetur est. Duis iaculis gravida dui sit amet porttitor. Praesent volutpat faucibus auctor. Fusce nec massa diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed tempus massa. Aenean vel luctus augue, eu bibendum magna.</p>
+      </div>
+      <div class="col-lg-6 col-sm ">
+        <img src="public/img/imagem1.jpg" class="img-fluid rounded shadow" alt="">
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--Another ection-->
+  <section class="container-fluid m-0" style="background-color:#14243E; height: 500px;">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-sm align-self-center mx-auto"style="background-image: url(public/img/imagem2.jpg);background-size:cover; opacity:0.5;">
+        <div id="background-image" ></div>
+      </div>
+      <div  class="col-lg-6 col-sm align-self-center mx-auto" style="color: #EFF1F4;">
+        <h4 class=" h1 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque.</h4>
+        <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra condimentum massa eget mattis. Maecenas aliquet tempor leo, et laoreet diam. Praesent quis consectetur est. Duis iaculis gravida dui sit amet porttitor. Praesent volutpat faucibus auctor. Fusce nec massa diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="btn btn-primary float-right mr-5" role="button" aria-pressed="true">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+  <!--Our clients section-->
+  <section class="container-fluid" style="padding: 6rem 2rem;">
+    <div class="container">
+      <div class="row">
+        <h4 class="col-12 h1 p-2">Our Clients</h4>
+        <p class="col-8 lead p-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra condimentum massa eget mattis. Maecenas aliquet tempor leo, et laoreet diam.</p>
+      </div>
+      <div class="row">
+        
+      </div>
+    </div>
+  </section>
+  <section style="height: 1000px;"></section>
+  
+       
+            
+  
 </body>
 <script src="public/js/jquery.js"></script>
 <script src="public/js/bootstrap.bundle.min.js"></script>
 <script src="public/js/script.js"></script>
+
+
 </html>
