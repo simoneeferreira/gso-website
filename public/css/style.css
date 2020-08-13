@@ -18,6 +18,7 @@ h1{
     
 }
 
+
     
 
 /*--------------------Configuracoes imagem topo*/
@@ -32,11 +33,11 @@ h1{
 #home{
     height: 100vh;
     min-height: 500px;
-    background-image: url(../img/banner2.jpg);
+    background-image: url(../img/banner3.jpg);
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
-    opacity: 0.8;
+    opacity: 0.9;
     
 }
 
@@ -58,12 +59,15 @@ h1{
 
 /*--------------------Configuracoes mudanca de cores do menu*/
 .blue{
+    font-size: large;
     background: transparent;
         -moz-transition: all .3s ease-in;
         -o-transition: all .3s ease-in;
         -webkit-transition: all .3s ease-in;
         transition: all .3s ease-in;
 }
+
+
 
 /*--------------------Configuracoes logotipo e slogan*/
 .logo{
@@ -102,7 +106,42 @@ h1{
     opacity: 0;
     animation-delay: 0.6s;
   }
-
+/*------------------Back to top button*/
+#button {
+  display: inline-block;
+  background-color: #14243E;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: ' \02C4';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 
 /*--------------------Configuracoes cards*/
@@ -114,6 +153,7 @@ h1{
 #background-image{
     height: 500px;
     margin: 0;
+    display: flex;
     min-height: 20px;
     background-size: cover;
     background-position:center;
@@ -152,4 +192,39 @@ h1{
 .linkedin:hover {
   background-color:#006db3;
 }
+/*-----------------page about - top image*/
 
+.h-250rem{
+  height: 15.625rem;
+}
+.bg-img-about{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media only screen and (max-width: 768px){
+  .sumir{
+    display: none;
+  }
+}
+
+/*-----------image in contact page*/
+
+#contato-img{
+    height: 100vh;
+    background-image: url(../img/contact.jpg);
+    margin: 0;
+    display: flex;
+    min-height: 20px;
+    background-size: cover;
+    background-position:center;
+    background-attachment: scroll;
+    opacity: 0.8;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
