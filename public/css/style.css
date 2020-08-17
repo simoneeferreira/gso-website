@@ -161,8 +161,22 @@ h1{
     opacity: 0.8;
     
 }
+.social i{
+  color: #EFF1F4;
+}
+.social a{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 0px;
+}
+.social a:hover{
+  background-color:#333;
+}
 /*-----social icon on footer-----*/
-.social ul {
+
+/*-----social icon on footer-----
+.social a {
   width: 100%;
   text-align: center;
   margin-top: 20px;
@@ -175,23 +189,24 @@ h1{
 }
 
 .social li a {
-  color: #EFF1F4;
-  width: auto;
+  width: 50px;
   display: block;
   text-decoration: none;
   border-bottom: medium none;
   padding: 10px;
   border-radius: 5px;
   transition: all 0.3s ease-in 0s, all 1s ease 0s;
-  background: #185f87;
+  background: #444749;
 }
 
 .social i{
   color: #EFF1F4;
 }
-.linkedin:hover {
+
+.icon-color:hover {
   background-color:#006db3;
-}
+}*/
+
 /*-----------------page about - top image*/
 
 .h-250rem{
@@ -209,38 +224,7 @@ h1{
   }
 }
 
-/*-----------image in contact page*/
 
-.inner-width2{
-  max-width: 1300px;
-  margin: auto;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#contato{
-  height: 40vh;
-  min-height: 500px;
-  background-image: url(../img/imagem4.jpg);
-  background-size: cover;
-  background-position:center;
-  background-attachment: fixed;
-  opacity: 0.9;
-  
-}
-
-#contato .inner-width2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
-#contato .content{
-  width: 100%;
-  color: #fff;
-}
 
 /* About us page - our team */
 .team {
@@ -324,4 +308,10 @@ h1{
 
 .team .box:hover {
   transform: translateY(-15px);
+}
+/* About us page - location */
+.icon{
+  
+  width: 15px;
+  
 }
