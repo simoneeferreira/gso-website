@@ -58,8 +58,10 @@ h1{
 }
 
 /*--------------------Configuracoes mudanca de cores do menu*/
+.navbar{
+  font-size: large;
+}
 .blue{
-    font-size: large;
     background: transparent;
         -moz-transition: all .3s ease-in;
         -o-transition: all .3s ease-in;
@@ -148,6 +150,11 @@ h1{
   .card{
       background-color: transparent;    
       border: none;
+  }
+  @media only screen and (min-width: 576px){
+    .borda{
+      border-right: gray solid 1px;
+    }
   }
 /*--------------------Configuracoes section saiba mais*/
 #background-image{
@@ -314,4 +321,9 @@ h1{
   
   width: 15px;
   
+}
+
+/*  footer*/
+.menu-footer a{
+  color: #EFF1F4;
 }
